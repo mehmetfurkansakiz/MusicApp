@@ -8,12 +8,12 @@ React-Native MusicApp
 
 ---
 
-![Screenshot](./imgReadme/Screenshot_1.png)
+![Screenshot](./imgREADME/Screenshot_1.png)
 
 ---
 
-![Screenshot](./imgReadme/Screenshot_2.png)
+![Screenshot](./imgREADME/Screenshot_2.png)
 
 ---
 
-![Screenshot](./imgReadme/Screenshot_3.png)
+![Screenshot](./imgREADME/Screenshot_3.png)
