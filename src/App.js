@@ -5,7 +5,7 @@ import SongCard from './components/SongCard';
 import SearchBar from './components/SearchBar/SearchBar';
 
 function App() {
-  const [list, setList] = useState([music_data]);
+  const [list, setList] = useState(music_data);
   const renderSong = ({item}) => <SongCard song={item} />;
 
   const renderSeperator = () => <View style={styles.seperator} />;
@@ -15,8 +15,8 @@ function App() {
       const searchedText = text.toLowerCase();
       const currentTitle =
         song.title.toLowerCase() +
-        song.artist.toLowerCase() +
-        song.album.toLowerCase();
+        song.album.toLowerCase() +
+        song.artist.toLowerCase();
 
       return currentTitle.indexOf(searchedText) > -1;
     });
@@ -27,10 +27,10 @@ function App() {
     <View style={styles.container}>
       <SearchBar onSearch={handleSearch} />
       <FlatList
-        keyExtractor={item => item.id}
+        key={music_data.id}
+        ItemSeparatorComponent={renderSeperator}
         data={list}
         renderItem={renderSong}
-        ItemSeparatorComponent={renderSeperator}
       />
     </View>
   );
